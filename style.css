@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("bg.jpeg");
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.taskbar {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    height: 6%;
+    background-color: #f3f3f3;
+    padding: 1px 0px;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    height: 80%;
+    margin: 8px 0px;
+}
+
+.startMenu {
+    width: 100vw;
+    position: absolute;
+    bottom: -650px;
+    text-align: center;
+    transition: all 0.5s ease-in;
+}
+
+.startMenu img {
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px 5px rgb(0, 0, 0);
+}
+
+.chrome img {
+    width: 67px;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+.chrome-1 {
+    list-style: none;
+}
+
+.chrome li a {
+    color: white;
+    text-decoration: none;
+}
+
+.edge img {
+    width: 40px;
+    margin: 20px 12px;
+}
+
+.edge-1 {
+    list-style: none;
+}
+
+.edge li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    background: url("20512806.jpg") no-repeat center center/cover;
+    position: absolute;
+    bottom: -650px;
+    left: 300px;
+    width: 600px;
+    height: 500px;
+    background-color: white;
+    border-radius: 14px;
+    padding: 27px 50px;
+    transition: all 0.5s ease-in;
+    text-align: center;
+    border: 2px solid white;
+    box-shadow: 1px 1px 21px rgb(248, 244, 244);
+}
+
+.container input {
+    padding: 8px 75px;
+    border-radius: 14px;
+    background-color: rgb(255, 255, 255);
+}
+
+.ggl {
+    color: rgb(255, 255, 255);
+    padding: 63px 0px;
+    font-size: 74px;
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+}
+
+.history {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    background-color: white;
+    opacity: 0.7;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 263px;
+}
+
+.sh {
+    width: 232px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    opacity: 0.7;
+    margin: auto;
+}
+
+.btn {
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(111, 233, 166);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(22, 108, 67);
+    color: white;
+}
+
+.answer {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    opacity: 0.7;
+}
+
+.bottom:active {
+    box-shadow: 1px 1px 5px 5px;
+}
+
+.chromeIcon:active {
+    box-shadow: 1px 1px 5px 5px;
+}
+
+.splash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 246);
+    z-index: 200;
+    color: white;
+    text-align: center;
+    line-height: 90vh;
+}
+
+.splash.display-none{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    z-index: -10;
+    color: white;
+    text-align: center;
+    line-height: 90vh;
+    transition: all 0.5s ease-in;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+                                                      
